@@ -1,0 +1,10 @@
+$color-Primaire: #9356DC;
+$color-Secondaire: #FF79DA;
+$color-Tertiaire: #99E2D0;
+$color-gray: #353535;
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,9 @@
+@import'Variable-Mixin';
+@import"./home/header";
+@import "./home/explorer";
+@import"./home/fonctionnement";
+
+*{
+    margin: 0;
+    padding: 0;
+}
