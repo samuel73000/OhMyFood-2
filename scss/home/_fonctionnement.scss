@@ -11,6 +11,7 @@
     flex-direction: column;
     gap: 25px ;
     .icon-fonctionnement{
+        position: relative;
         @include center;
         flex-direction: row;
         width: 80%;
@@ -20,8 +21,11 @@
         background-color: #F6F6F6;
     }
     .numero-fonctionnement{
+        position: absolute;
+        top: 25;
+        left: 0;
+        transform: translate(-50%, 0px);
         @include center;
-        position: relative;
         font-weight: 500;
         font-size: 14px;
         color: white;
@@ -39,6 +43,7 @@
     font-size: 16px;
     font-weight: 500;
     font-family: roboto;
+    margin-left: 15px;
     }
    
 }

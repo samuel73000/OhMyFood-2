@@ -83,6 +83,7 @@
   gap: 25px;
 }
 .container-fonctionnement .icon-fonctionnement-all .icon-fonctionnement {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,10 +95,13 @@
   background-color: #F6F6F6;
 }
 .container-fonctionnement .icon-fonctionnement-all .numero-fonctionnement {
+  position: absolute;
+  top: 25;
+  left: 0;
+  transform: translate(-50%, 0px);
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   font-weight: 500;
   font-size: 14px;
   color: white;
@@ -114,6 +118,7 @@
   font-size: 16px;
   font-weight: 500;
   font-family: roboto;
+  margin-left: 15px;
 }
 
 * {
