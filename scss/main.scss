@@ -2,8 +2,10 @@
 @import"./home/header";
 @import "./home/explorer";
 @import"./home/fonctionnement";
+@import"./home/restaurants";
 
 *{
     margin: 0;
     padding: 0;
+    object-fit: cover;
 }
