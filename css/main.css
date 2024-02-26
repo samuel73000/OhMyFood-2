@@ -30,7 +30,6 @@
   font-size: 16px;
   font-weight: 500;
   color: #353535;
-  font-family: roboto;
 }
 
 .container-explorer {
@@ -46,20 +45,17 @@
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  font-family: roboto;
   margin-top: 39px;
 }
 .container-explorer .p-explorer {
   margin-top: 10px;
   text-align: center;
   font-size: 16px;
-  font-family: roboto;
   font-weight: 300;
 }
 .container-explorer .btn-explorer {
   margin-top: 26px;
   font-size: 16px;
-  font-family: roboto;
   color: white;
   font-weight: 500;
   width: 216px;
@@ -69,12 +65,17 @@
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   border: 0px;
 }
+.container-explorer .btn-explorer:hover {
+  background: linear-gradient(193.33deg, #9356dc -62.44%, #ff79da 123.93%);
+  font-weight: 700;
+  font-size: 17px;
+  font-style: oblique;
+}
 
 .container-fonctionnement .titre-fonctionnement {
   margin: 48px 0 26px 20px;
   font-size: 24px;
   font-weight: 700;
-  font-family: roboto;
 }
 .container-fonctionnement .icon-fonctionnement-all {
   display: flex;
@@ -118,7 +119,6 @@
 .container-fonctionnement .icon-fonctionnement-all .p-fonctionnement {
   font-size: 16px;
   font-weight: 500;
-  font-family: roboto;
   margin-left: 15px;
 }
 
@@ -129,7 +129,6 @@
 .container-restaurants .container-restaurants-titre {
   font-weight: 700;
   font-size: 24px;
-  font-family: roboto;
   margin-left: 20px;
 }
 
@@ -156,7 +155,6 @@
   border-radius: 2px;
   font-size: 14px;
   font-weight: 500;
-  font-family: roboto;
   align-items: center;
   padding: 6px 9px 6px 9px;
   color: #008766;
@@ -169,13 +167,11 @@
 .icon-restaurant-all .icon-restaurant .icon-restaurant-titre {
   font-size: 18px;
   font-weight: 700;
-  font-family: roboto;
   margin: 16px 0 0 13px;
 }
 .icon-restaurant-all .icon-restaurant .icon-restaurant-p {
   font-size: 17px;
   font-weight: 300;
-  font-family: roboto;
   margin: 5px 0 0 13px;
 }
 .icon-restaurant-all .icon-restaurant .icon-restaurant-coeur {
@@ -203,7 +199,6 @@
   color: white;
   font-size: 16px;
   font-weight: 500;
-  font-family: roboto;
 }
 .container-footer-p .footer-i {
   margin-right: 11px;
@@ -213,6 +208,7 @@
   margin: 0;
   padding: 0;
   object-fit: cover;
+  font-family: roboto;
 }
 
 /*# sourceMappingURL=main.css.map */
