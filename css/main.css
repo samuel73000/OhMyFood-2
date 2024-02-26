@@ -11,6 +11,7 @@
 .container-header .container-logo .logo {
   width: 197px;
   height: 36px;
+  object-fit: contain;
 }
 .container-header .container-localisation {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
@@ -123,6 +124,7 @@
 
 .container-restaurants {
   margin-top: 100px;
+  padding-bottom: 60px;
 }
 .container-restaurants .container-restaurants-titre {
   font-weight: 700;
@@ -181,6 +183,30 @@
   right: 25px;
   bottom: 33px;
   font-size: 22px;
+}
+
+.container-footer {
+  background-color: #353535;
+  padding: 22px 25px 22px 25px;
+}
+.container-footer .img-footer {
+  width: 120px;
+  height: 25px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+.container-footer-p {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: roboto;
+}
+.container-footer-p .footer-i {
+  margin-right: 11px;
 }
 
 * {
