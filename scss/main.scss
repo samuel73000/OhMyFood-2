@@ -1,13 +1,14 @@
 @import'Variable-Mixin';
-@import"./home/header";
+@import"./Layout/header";
 @import "./home/explorer";
 @import"./home/fonctionnement";
 @import"./home/restaurants";
-@import"./home/footer";
+@import"./Layout/footer";
 
 *{
     margin: 0;
     padding: 0;
     object-fit: cover;
     font-family: roboto;
+    
 }

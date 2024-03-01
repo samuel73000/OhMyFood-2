@@ -10,6 +10,10 @@
     font-size: 24px;
     font-weight: 700;
     margin-top: 39px;
+    @media (min-width: 1439px){
+      font-size: 40px;
+      
+    }
   }
   .p-explorer {
     margin-top: 10px;
@@ -30,9 +34,6 @@
     border: 0px;
   }
   .btn-explorer:hover{
-    background: linear-gradient(193.33deg, #9356dc -62.44%, #ff79da 123.93%);
-    font-weight: 700;
-    font-size: 17px;
-    font-style: oblique;
+   filter: brightness(110%);
   }
 }
