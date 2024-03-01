@@ -178,6 +178,8 @@
   border-radius: 15px;
   padding-bottom: 12px;
   position: relative;
+  text-decoration: none;
+  color: black;
 }
 @media (min-width: 1439px) {
   .icon-restaurant-all .icon-restaurant {
@@ -188,7 +190,7 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 2px;
   font-size: 14px;
@@ -277,6 +279,106 @@
 }
 .container-footer-p .footer-i {
   margin-right: 11px;
+}
+
+.fleche-back-restaurant {
+  position: absolute;
+  left: 5%;
+  color: black;
+}
+
+.img-page-restaurant {
+  width: 100%;
+  height: 275px;
+  position: relative;
+  z-index: 0;
+}
+
+.container-page-restaurant {
+  padding-top: 32px;
+  border-radius: 40px 40px 0% 0%;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-10%);
+  background-color: #F6F6F6;
+  width: 100%;
+  height: auto;
+}
+.container-page-restaurant .container-titre-page-restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+.container-page-restaurant .container-titre-page-restaurant .titre-page-restaurant {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: Shrikhand;
+  font-style: italic;
+}
+.container-page-restaurant .container-titre-page-restaurant .icon-coeur-size {
+  font-size: 20px;
+}
+.container-page-restaurant .container-card-page-restaurant-all {
+  margin-top: 40px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+.container-page-restaurant .container-card-page-restaurant-all .titre-card-page-restaurant {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 5px;
+  border-bottom: solid 3px #99E2D0;
+  width: 40px;
+}
+.container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15.04px;
+  display: flex;
+  padding: 10px 0px 10px 0px;
+  gap: 5px;
+  margin-top: 12px;
+}
+.container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant .sous-titre-card-page-restaurant {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+.container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant .sous-texte-card-page-restaurant {
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 15px;
+}
+.container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant .prix-card-page-restaurant {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.container-page-restaurant .container-bouton-page-restaurant {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.container-page-restaurant .container-bouton-page-restaurant .bouton-page-restaurant {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  width: 186px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  border: 0px;
+}
+.container-page-restaurant .container-bouton-page-restaurant .bouton-page-restaurant:hover {
+  filter: brightness(110%);
 }
 
 * {
