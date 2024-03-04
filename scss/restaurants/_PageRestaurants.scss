@@ -14,7 +14,7 @@ padding-top: 32px ;
 border-radius: 40px 40px 0% 0% ;
 position: absolute;
 z-index: 1;
-transform: translateY(-10%); 
+transform: translateY(-5%); 
 background-color: #F6F6F6;
 width: 100%;
 height: auto;
@@ -28,7 +28,7 @@ height: auto;
     padding-left: 17px;
     padding-right: 17px;
 .titre-page-restaurant{
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 400;
     font-family: Shrikhand;
     font-style: italic;}
@@ -58,6 +58,7 @@ margin-top: 40px;
         padding: 10px 0px 10px 0px;
         gap: 5px;
         margin-top: 12px;
+      
         
         .sous-titre-card-page-restaurant{
            font-size: 16px;
@@ -68,6 +69,11 @@ margin-top: 40px;
             font-size: 15px;
             font-weight: 300;
             margin-left: 15px;
+            white-space: nowrap;
+            /* Pour que le texte déborde sur une seule ligne */
+            overflow: hidden;
+            text-overflow: ellipsis;/* Afficher les points de suspension (...) lorsque le texte déborde */
+            width: 60vw;
         }
         .prix-card-page-restaurant{
         position: absolute;
