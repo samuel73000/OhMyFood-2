@@ -302,21 +302,20 @@
 
 .container-page-restaurant {
   padding-top: 32px;
+  padding-bottom: 32px;
   border-radius: 40px 40px 0% 0%;
-  position: absolute;
+  margin: auto;
+  margin-top: -60px;
   z-index: 1;
-  transform: translateY(-5%);
+  position: relative;
   background-color: #F6F6F6;
   width: 100%;
   height: auto;
 }
 @media (min-width: 1439px) {
   .container-page-restaurant {
-    left: 10%;
     width: 60%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     padding-left: 180px;
     padding-right: 180px;
   }
@@ -375,6 +374,11 @@
   font-size: 16px;
   font-weight: 500;
   margin-left: 15px;
+  white-space: nowrap;
+  /* Pour que le texte déborde sur une seule ligne */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Afficher les points de suspension (...) lorsque le texte déborde */
+  width: 60vw;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant .sous-texte-card-page-restaurant {
   font-size: 15px;
@@ -397,7 +401,6 @@
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 .container-page-restaurant .container-bouton-page-restaurant .bouton-page-restaurant {
   font-size: 16px;
