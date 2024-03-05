@@ -305,6 +305,11 @@
     height: 506px;
   }
 }
+@media (min-width: 768px) {
+  .img-page-restaurant {
+    height: 370px;
+  }
+}
 
 .container-page-restaurant {
   padding-top: 32px;
@@ -314,7 +319,7 @@
   margin-top: -60px;
   z-index: 1;
   position: relative;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   width: 100%;
   height: auto;
 }
@@ -324,6 +329,14 @@
     flex-direction: column;
     padding-left: 180px;
     padding-right: 180px;
+  }
+}
+@media (min-width: 768px) {
+  .container-page-restaurant {
+    width: 60%;
+    flex-direction: column;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }
 .container-page-restaurant .container-titre-page-restaurant {
