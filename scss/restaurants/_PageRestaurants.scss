@@ -58,6 +58,15 @@
         font-size: 28px;
       }
     }
+    .icon-restaurant-coeur::before{
+      font-family: "Font Awesome 5 free";
+      content: "\f004";
+      font-style: normal;
+      cursor: pointer;
+    }
+    .icon-restaurant-coeur:hover::before {
+      @include Animation-coeur;
+     }
     .icon-coeur-size {
       font-size: 20px;
     }

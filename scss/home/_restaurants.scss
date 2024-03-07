@@ -64,11 +64,19 @@
       font-weight: 300;
       margin: 5px 0 0 13px;
     }
-    .icon-restaurant-coeur {
+    .icon-restaurant-coeur::before {
       position: absolute;
       right: 25px;
       bottom: 33px;
       font-size: 22px;
+      font-family: "Font Awesome 5 free";
+      content: "\f004";
+      font-style: normal;
+      cursor: pointer;
+    }
+
+    .icon-restaurant-coeur:hover::before {
+     @include Animation-coeur;
     }
   }
 }

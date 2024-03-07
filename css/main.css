@@ -226,11 +226,25 @@
   font-weight: 300;
   margin: 5px 0 0 13px;
 }
-.icon-restaurant-all .icon-restaurant .icon-restaurant-coeur {
+.icon-restaurant-all .icon-restaurant .icon-restaurant-coeur::before {
   position: absolute;
   right: 25px;
   bottom: 33px;
   font-size: 22px;
+  font-family: "Font Awesome 5 free";
+  content: "\f004";
+  font-style: normal;
+  cursor: pointer;
+}
+.icon-restaurant-all .icon-restaurant .icon-restaurant-coeur:hover::before {
+  font-family: "FontAwesome"; /* Modifie la famille de police pour FontAwesome lorsque survolé */
+  /* Définir une couleur de remplissage transparente */
+  color: transparent;
+  /* Dégradé pour le contour */
+  background: linear-gradient(193.33deg, #9356dc 0%, #ff79da 100%), radial-gradient(circle, #9356dc 0%, #ff79da 100%);
+  /* Appliquer le dégradé en tant que masque */
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .container-footer {
@@ -363,6 +377,22 @@
     font-size: 28px;
   }
 }
+.container-page-restaurant .container-titre-page-restaurant .icon-restaurant-coeur::before {
+  font-family: "Font Awesome 5 free";
+  content: "\f004";
+  font-style: normal;
+  cursor: pointer;
+}
+.container-page-restaurant .container-titre-page-restaurant .icon-restaurant-coeur:hover::before {
+  font-family: "FontAwesome"; /* Modifie la famille de police pour FontAwesome lorsque survolé */
+  /* Définir une couleur de remplissage transparente */
+  color: transparent;
+  /* Dégradé pour le contour */
+  background: linear-gradient(193.33deg, #9356dc 0%, #ff79da 100%), radial-gradient(circle, #9356dc 0%, #ff79da 100%);
+  /* Appliquer le dégradé en tant que masque */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 .container-page-restaurant .container-titre-page-restaurant .icon-coeur-size {
   font-size: 20px;
 }
@@ -442,3 +472,5 @@
   object-fit: cover;
   font-family: roboto;
 }
+
+/*# sourceMappingURL=main.css.map */
