@@ -1,0 +1,111 @@
+.loader {
+    inset: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: ‘Arial Narrow’, sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    gap: 4px;
+    background-color: white;
+    color: $color-Primaire;
+    animation: disappear 200ms 4s;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  
+  span {
+    margin-top: -400px;
+    position: relative;
+    top: 1.63em;  
+    display: inline-block;
+    text-transform: uppercase;  
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  
+  .let1 {
+    animation: drop 1.5s ease-in-out infinite;
+    animation-delay: 1.2s;
+  }
+  
+  .let2 {
+    animation: drop 1.5s ease-in-out infinite;
+    animation-delay: 1.3s;
+  }
+  
+  .let3 {
+    animation: drop 1.5s ease-in-out infinite;
+    animation-delay: 1.4s;
+  }
+  
+  .let4 {
+    animation: drop 1.5s ease-in-out infinite;
+    animation-delay: 1.5s;
+  
+  }
+  
+  .let5 {
+    animation: drop 1.5s ease-in-out infinite;
+    animation-delay: 1.6s;
+  }
+  
+  .let6 {
+    animation: drop 1.5s ease-in-out infinite;
+    animation-delay: 1.7s;
+  }
+  
+  .let7 {
+    animation: drop 1.5s ease-in-out infinite;
+    animation-delay: 1.8s;
+  }
+  .let8 {
+    animation: drop 1.5s ease-in-out infinite;
+    animation-delay: 1.9s;
+  }
+  .let9 {
+    animation: drop 1.5s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  .let10 {
+    animation: drop 1.5s ease-in-out infinite;
+    animation-delay: 2.1s;
+  }
+  
+  @keyframes drop {
+      10% {
+          opacity: 0.5;
+      }
+      20% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      80% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      90% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 0;
+          top: 6.94em
+      }
+  }
+  @keyframes disappear{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
