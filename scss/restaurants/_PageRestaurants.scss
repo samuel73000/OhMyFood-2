@@ -63,6 +63,7 @@
       content: "\f004";
       font-style: normal;
       cursor: pointer;
+      
     }
     .icon-restaurant-coeur:hover::before {
       @include Animation-coeur;
@@ -76,6 +77,13 @@
     margin-top: 40px;
     padding-left: 17px;
     padding-right: 17px;
+    animation: apparition-section-restaurant 1s ease 2.5s forwards;
+      @for $i from 1 through 15{
+        &:nth-child(#{$i}){
+          animation-fill-mode: both;
+          animation-delay: 250ms * $i;
+        }
+      }
     .titre-card-page-restaurant {
       font-size: 16px;
       font-weight: 300;
@@ -93,6 +101,7 @@
       padding: 10px 0px 10px 0px;
       gap: 5px;
       margin-top: 12px;
+      
 
       .sous-titre-card-page-restaurant {
         font-size: 16px;
@@ -142,4 +151,15 @@
       filter: brightness(110%);
     }
   }
+  // animation
+
+@keyframes apparition-section-restaurant {
+  0%{
+    scale: 0;
+  }
+  100%{
+    scale: 1;
+  }
 }
+}
+

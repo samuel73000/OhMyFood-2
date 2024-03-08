@@ -401,6 +401,67 @@
   margin-top: 40px;
   padding-left: 17px;
   padding-right: 17px;
+  animation: apparition-section-restaurant 1s ease 2.5s forwards;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(1) {
+  animation-fill-mode: both;
+  animation-delay: 250ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(2) {
+  animation-fill-mode: both;
+  animation-delay: 500ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(3) {
+  animation-fill-mode: both;
+  animation-delay: 750ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(4) {
+  animation-fill-mode: both;
+  animation-delay: 1000ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(5) {
+  animation-fill-mode: both;
+  animation-delay: 1250ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(6) {
+  animation-fill-mode: both;
+  animation-delay: 1500ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(7) {
+  animation-fill-mode: both;
+  animation-delay: 1750ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(8) {
+  animation-fill-mode: both;
+  animation-delay: 2000ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(9) {
+  animation-fill-mode: both;
+  animation-delay: 2250ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(10) {
+  animation-fill-mode: both;
+  animation-delay: 2500ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(11) {
+  animation-fill-mode: both;
+  animation-delay: 2750ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(12) {
+  animation-fill-mode: both;
+  animation-delay: 3000ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(13) {
+  animation-fill-mode: both;
+  animation-delay: 3250ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(14) {
+  animation-fill-mode: both;
+  animation-delay: 3500ms;
+}
+.container-page-restaurant .container-card-page-restaurant-all:nth-child(15) {
+  animation-fill-mode: both;
+  animation-delay: 3750ms;
 }
 .container-page-restaurant .container-card-page-restaurant-all .titre-card-page-restaurant {
   font-size: 16px;
@@ -465,6 +526,14 @@
 }
 .container-page-restaurant .container-bouton-page-restaurant .bouton-page-restaurant:hover {
   filter: brightness(110%);
+}
+@keyframes apparition-section-restaurant {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 .loader {
