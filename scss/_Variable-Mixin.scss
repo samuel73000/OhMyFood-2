@@ -9,8 +9,7 @@ $color-gray: #353535;
     align-items: center;
 }
 @mixin Animation-coeur{
-    font-family: "FontAwesome"; /* Modifie la famille de police pour FontAwesome lorsque survolé */
-      /* Définir une couleur de remplissage transparente */
+  /* Définir une couleur de remplissage transparente */
       color: transparent;
       /* Dégradé pour le contour */
       background: linear-gradient(193.33deg, #9356dc 0%, #ff79da 100%),
@@ -19,4 +18,5 @@ $color-gray: #353535;
       /* Appliquer le dégradé en tant que masque */
       -webkit-background-clip: text;
       background-clip: text;
+     
 }

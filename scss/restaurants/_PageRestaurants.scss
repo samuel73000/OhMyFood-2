@@ -58,19 +58,44 @@
         font-size: 28px;
       }
     }
-    .icon-restaurant-coeur::before{
-      font-family: "Font Awesome 5 free";
-      content: "\f004";
+    .icon-restaurant-coeur-vide {
+      position: absolute;
+      font-size: 22px;
       font-style: normal;
       cursor: pointer;
-      
-    }
-    .icon-restaurant-coeur:hover::before {
-      @include Animation-coeur;
-     }
-    .icon-coeur-size {
-      font-size: 20px;
-    }
+      transition: opacity 0.1s;
+  }
+.icon-restaurant-coeur-plein{
+  position: absolute;
+  font-size: 22px;
+  font-style: normal;
+  cursor: pointer;
+  @include Animation-coeur;
+  opacity: 0; /* Commencez avec une opacité de 0 */
+  transition: opacity 1s; /* Ajoutez une transition pour l'opacité */
+}
+
+#icon-checkbox-1{
+  visibility: hidden;
+  position: absolute;
+  // right: 25px;
+  // bottom: 33px;
+}
+  label {
+    right: 450px;
+    top: 40px;
+     position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#icon-checkbox-1:checked ~ label .icon-restaurant-coeur-vide{
+  opacity: 0;
+  }
+ 
+  #icon-checkbox-1:checked ~ label .icon-restaurant-coeur-plein{
+  opacity: 1;
+  }
   }
 
   .container-card-page-restaurant-all {

@@ -64,19 +64,53 @@
       font-weight: 300;
       margin: 5px 0 0 13px;
     }
-    .icon-restaurant-coeur::before {
+    .icon-restaurant-coeur-vide {
       position: absolute;
-      right: 25px;
-      bottom: 33px;
       font-size: 22px;
-      font-family: "Font Awesome 5 free";
-      content: "\f004";
       font-style: normal;
       cursor: pointer;
-    }
-
-    .icon-restaurant-coeur:hover::before {
-     @include Animation-coeur;
-    }
+      transition: opacity 0.1s;
   }
+.icon-restaurant-coeur-plein{
+  position: absolute;
+  font-size: 22px;
+  font-style: normal;
+  cursor: pointer;
+  @include Animation-coeur;
+  opacity: 0; /* Commencez avec une opacité de 0 */
+  transition: opacity 1s; /* Ajoutez une transition pour l'opacité */
+}
+
+#icon-checkbox-1,
+#icon-checkbox-2,
+#icon-checkbox-3,
+#icon-checkbox-4{
+  visibility: hidden;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+}
+  label {
+    right: 42px;
+  bottom: 50px;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+#icon-checkbox-1:checked ~ label .icon-restaurant-coeur-vide,
+#icon-checkbox-2:checked ~ label .icon-restaurant-coeur-vide,
+#icon-checkbox-3:checked ~ label .icon-restaurant-coeur-vide,
+#icon-checkbox-4:checked ~ label .icon-restaurant-coeur-vide{
+  opacity: 0;
+  }
+  #icon-checkbox-1:checked ~ label .icon-restaurant-coeur-plein,
+  #icon-checkbox-2:checked ~ label .icon-restaurant-coeur-plein,
+  #icon-checkbox-3:checked ~ label .icon-restaurant-coeur-plein,
+  #icon-checkbox-4:checked ~ label .icon-restaurant-coeur-plein{
+  opacity: 1;
+  }
+
+
+  }
+  
 }
