@@ -70,18 +70,19 @@
 }
 .container-explorer .btn-explorer {
   margin-top: 26px;
+  width: 216px;
   font-size: 16px;
   color: white;
   font-weight: 500;
-  width: 216px;
   height: 50px;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border: 0px;
 }
 .container-explorer .btn-explorer:hover {
   filter: brightness(110%);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .container-fonctionnement {
@@ -250,7 +251,7 @@
   /* Définir une couleur de remplissage transparente */
   color: transparent;
   /* Dégradé pour le contour */
-  background: linear-gradient(193.33deg, #9356dc 0%, #ff79da 100%), radial-gradient(circle, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(193.33deg, #9356DC 0%, #FF79DA 100%), radial-gradient(circle, #9356DC 0%, #FF79DA 100%);
   /* Appliquer le dégradé en tant que masque */
   -webkit-background-clip: text;
   background-clip: text;
@@ -474,7 +475,7 @@
   /* Définir une couleur de remplissage transparente */
   color: transparent;
   /* Dégradé pour le contour */
-  background: linear-gradient(193.33deg, #9356dc 0%, #ff79da 100%), radial-gradient(circle, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(193.33deg, #9356DC 0%, #FF79DA 100%), radial-gradient(circle, #9356DC 0%, #FF79DA 100%);
   /* Appliquer le dégradé en tant que masque */
   -webkit-background-clip: text;
   background-clip: text;
@@ -609,21 +610,23 @@
 .container-page-restaurant .container-bouton-page-restaurant {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 40px;
 }
 .container-page-restaurant .container-bouton-page-restaurant .bouton-page-restaurant {
+  width: 186px;
   font-size: 16px;
   color: white;
   font-weight: 500;
-  width: 186px;
   height: 50px;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border: 0px;
 }
 .container-page-restaurant .container-bouton-page-restaurant .bouton-page-restaurant:hover {
   filter: brightness(110%);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .loader {
@@ -644,8 +647,7 @@
   gap: 4px;
   background-color: white;
   color: #9356DC;
-  animation: disappear 200ms 4s;
-  transform-origin: top;
+  animation: disappear 20ms 4s;
   animation-fill-mode: forwards;
 }
 
