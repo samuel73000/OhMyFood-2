@@ -247,7 +247,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   opacity: 0; /* Commencez avec une opacité de 0 */
-  transition: opacity 1s; /* Ajoutez une transition pour l'opacité */
+  transition: opacity 2s; /* Ajoutez une transition pour l'opacité */
+  transform-origin: top;
 }
 .icon-restaurant-all .icon-restaurant #icon-checkbox-1,
 .icon-restaurant-all .icon-restaurant #icon-checkbox-2,
@@ -385,20 +386,27 @@
   }
 }
 .container-page-restaurant .container-titre-page-restaurant {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-left: 17px;
   padding-right: 17px;
 }
 @media (min-width: 1439px) {
   .container-page-restaurant .container-titre-page-restaurant {
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .container-page-restaurant .container-titre-page-restaurant {
+    display: flex;
+    align-items: center;
     justify-content: center;
     gap: 24px;
   }
 }
 .container-page-restaurant .container-titre-page-restaurant .titre-page-restaurant {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   font-family: Shrikhand;
   font-style: italic;
@@ -407,6 +415,14 @@
   .container-page-restaurant .container-titre-page-restaurant .titre-page-restaurant {
     font-size: 28px;
   }
+}
+.container-page-restaurant .container-titre-page-restaurant .test {
+  padding-left: 17px;
+  padding-right: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
 }
 .container-page-restaurant .container-titre-page-restaurant .icon-restaurant-coeur-vide {
   position: absolute;
@@ -435,10 +451,7 @@
   position: absolute;
 }
 .container-page-restaurant .container-titre-page-restaurant label {
-  right: 450px;
-  top: 40px;
-  position: absolute;
-  display: inline-block;
+  margin-top: -20px;
   cursor: pointer;
 }
 .container-page-restaurant .container-titre-page-restaurant #icon-checkbox-1:checked ~ label .icon-restaurant-coeur-vide {

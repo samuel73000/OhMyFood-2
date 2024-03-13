@@ -78,7 +78,8 @@
   cursor: pointer;
   @include Animation-coeur;
   opacity: 0; /* Commencez avec une opacité de 0 */
-  transition: opacity 1s; /* Ajoutez une transition pour l'opacité */
+  transition: opacity 2s; /* Ajoutez une transition pour l'opacité */
+  transform-origin:top;
 }
 
 #icon-checkbox-1,

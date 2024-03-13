@@ -39,24 +39,40 @@
     padding-left: 90px;
     padding-right: 90px;
   }
+
+
+
   .container-titre-page-restaurant {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding-left: 17px;
     padding-right: 17px;
     @media (min-width: 1439px) {
+      gap: 24px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    @media (min-width: 768px){
+      display: flex;
+      align-items: center;
       justify-content: center;
       gap: 24px;
     }
     .titre-page-restaurant {
-      font-size: 25px;
+      font-size: 22px;
       font-weight: 400;
       font-family: Shrikhand;
       font-style: italic;
       @media (min-width: 1439px) {
         font-size: 28px;
       }
+    }
+    .test{
+      padding-left: 17px;
+    padding-right: 17px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
     }
     .icon-restaurant-coeur-vide {
       position: absolute;
@@ -78,14 +94,10 @@
 #icon-checkbox-1{
   visibility: hidden;
   position: absolute;
-  // right: 25px;
-  // bottom: 33px;
 }
   label {
-    right: 450px;
-    top: 40px;
-     position: absolute;
-    display: inline-block;
+
+margin-top: -20px;
     cursor: pointer;
 }
 
