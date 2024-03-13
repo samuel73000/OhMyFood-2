@@ -59,6 +59,24 @@ $color-gray: #353535;
 }
 @keyframes spin-valide-page-restaurant{
   0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+@keyframes disparition-div-valide-page-restaurant{
+  0% {
+    opacity: 1; 
+    right: 0; 
+}
+100% {
+    opacity: 0; 
+    right: -50px; 
+}
+}
+@keyframes disparition-spin-valide-page-restaurant{
+  0%{
     transform: rotate(0deg);
   }
   100%{

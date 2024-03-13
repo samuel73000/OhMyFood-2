@@ -19,6 +19,24 @@
 }
 @keyframes spin-valide-page-restaurant {
   0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes disparition-div-valide-page-restaurant {
+  0% {
+    opacity: 1;
+    right: 0;
+  }
+  100% {
+    opacity: 0;
+    right: -50px;
+  }
+}
+@keyframes disparition-spin-valide-page-restaurant {
+  0% {
     transform: rotate(0deg);
   }
   100% {
@@ -669,6 +687,12 @@
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:checked ~ .container-valide-page-restaurant .icon-valide-page-restaurant {
   animation: spin-valide-page-restaurant 1s ease forwards;
+}
+.container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:not(:checked) ~ .container-valide-page-restaurant {
+  animation: disparition-div-valide-page-restaurant 1s ease forwards;
+}
+.container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:not(:checked) ~ .container-valide-page-restaurant .icon-valide-page-restaurant {
+  animation: disparition-spin-valide-page-restaurant 1s ease forwards;
 }
 .container-page-restaurant .container-bouton-page-restaurant {
   display: flex;

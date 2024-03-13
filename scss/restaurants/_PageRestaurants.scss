@@ -16,7 +16,7 @@
   }
 }
 .container-page-restaurant {
-  overflow-x:hidden;
+  overflow-x: hidden;
   padding-top: 32px;
   padding-bottom: 32px;
   border-radius: 40px 40px 0% 0%;
@@ -202,6 +202,16 @@
         ~ .container-valide-page-restaurant
         .icon-valide-page-restaurant {
         animation: spin-valide-page-restaurant 1s ease forwards;
+      }
+
+      #icon-valide:not(:checked) ~ .container-valide-page-restaurant {
+        animation: disparition-div-valide-page-restaurant 1s ease forwards;
+      }
+
+      #icon-valide:not(:checked)
+        ~ .container-valide-page-restaurant
+        .icon-valide-page-restaurant {
+        animation: disparition-spin-valide-page-restaurant 1s ease forwards;
       }
     }
   }
