@@ -17,6 +17,13 @@ $color-gray: #353535;
           radial-gradient(circle, #9356dc 0%, #ff79da 100%);
       /* Appliquer le dégradé en tant que masque */
       -webkit-background-clip: text;
-      background-clip: text;
-     
+      background-clip: text; 
+}
+@keyframes apparition-section-restaurant {
+  0%{
+    scale: 0;
+  }
+  100%{
+    scale: 1;
+  }
 }
