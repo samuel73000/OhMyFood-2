@@ -29,6 +29,7 @@ $color-gray: #353535;
       box-shadow: 0px 4px 10px 0px #00000040;
       background: linear-gradient(193.33deg, $color-Primaire -11.44%, $color-Secondaire 123.93%);
       border: 0px;
+      cursor: pointer;
       &:hover{
         filter: brightness(110%);
       box-shadow: 0px 8px 20px 0px #00000040;
@@ -42,5 +43,25 @@ $color-gray: #353535;
   }
   100%{
     scale: 1;
+  }
+}
+
+@keyframes apparition-div-valide-page-restaurant{
+ 
+  0% {
+    opacity: 0; /* L'élément est complètement transparent */
+    right: -50px; /* Déplacer l'élément hors de la vue */
+}
+100% {
+    opacity: 1; /* L'élément devient complètement opaque */
+    right: 0; /* Le déplacer à sa position finale */
+}
+}
+@keyframes spin-valide-page-restaurant{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }
