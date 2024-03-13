@@ -37,7 +37,7 @@
       position: absolute;
       right: 10px;
       top: 10px;
-      background-color: #99e2d0;
+      background-color: $color-Tertiaire;
       box-shadow: 0px 2px 4px 0px #00000026;
       border-radius: 2px;
       font-size: 14px;
@@ -70,48 +70,47 @@
       font-style: normal;
       cursor: pointer;
       transition: opacity 0.1s;
-  }
-.icon-restaurant-coeur-plein{
-  position: absolute;
-  font-size: 22px;
-  font-style: normal;
-  cursor: pointer;
-  @include Animation-coeur;
-  opacity: 0; /* Commencez avec une opacité de 0 */
-  transition: opacity 2s; /* Ajoutez une transition pour l'opacité */
-  transform-origin:top;
-}
+    }
+    
+    .icon-restaurant-coeur-plein {
+      position: absolute;
+      font-size: 22px;
+      font-style: normal;
+      cursor: pointer;
+      @include Animation-coeur; // Assurez-vous que cette mixin est définie ailleurs dans votre code
+      opacity: 0; /* Commencez avec une opacité de 0 */
+      transition: opacity 2s; /* Ajoutez une transition pour l'opacité */
+      transform-origin: top;
+    }
 
-#icon-checkbox-1,
-#icon-checkbox-2,
-#icon-checkbox-3,
-#icon-checkbox-4{
-  visibility: hidden;
-  position: absolute;
-  right: 25px;
-  bottom: 33px;
-}
-  label {
-    right: 42px;
-  bottom: 50px;
-    position: absolute;
-    display: inline-block;
-    cursor: pointer;
-}
-#icon-checkbox-1:checked ~ label .icon-restaurant-coeur-vide,
-#icon-checkbox-2:checked ~ label .icon-restaurant-coeur-vide,
-#icon-checkbox-3:checked ~ label .icon-restaurant-coeur-vide,
-#icon-checkbox-4:checked ~ label .icon-restaurant-coeur-vide{
-  opacity: 0;
-  }
-  #icon-checkbox-1:checked ~ label .icon-restaurant-coeur-plein,
-  #icon-checkbox-2:checked ~ label .icon-restaurant-coeur-plein,
-  #icon-checkbox-3:checked ~ label .icon-restaurant-coeur-plein,
-  #icon-checkbox-4:checked ~ label .icon-restaurant-coeur-plein{
-  opacity: 1;
-  }
+    @for $i from 1 through 4 {
+      $id: unquote("icon-checkbox-#{$i}");
+      
+      ##{$id}  {
+        visibility: hidden;
+        position: absolute;
+        right: 25px;
+        bottom: 33px;
+      }
+    }
+    
+    label {
+      right: 42px;
+      bottom: 50px;
+      position: absolute;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    @for $i from 1 through 4 {
+      $id: unquote("icon-checkbox-#{$i}");
+      ##{$id}:checked ~ label .icon-restaurant-coeur-vide {
+        opacity: 0;
+      }
+      ##{$id}:checked ~ label .icon-restaurant-coeur-plein {
+        opacity: 1;
+      }
+    }
 
-
   }
-  
 }

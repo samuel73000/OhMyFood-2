@@ -206,7 +206,7 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 2px;
   font-size: 14px;
@@ -258,9 +258,24 @@
   transition: opacity 2s; /* Ajoutez une transition pour l'opacité */
   transform-origin: top;
 }
-.icon-restaurant-all .icon-restaurant #icon-checkbox-1,
-.icon-restaurant-all .icon-restaurant #icon-checkbox-2,
-.icon-restaurant-all .icon-restaurant #icon-checkbox-3,
+.icon-restaurant-all .icon-restaurant #icon-checkbox-1 {
+  visibility: hidden;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+}
+.icon-restaurant-all .icon-restaurant #icon-checkbox-2 {
+  visibility: hidden;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+}
+.icon-restaurant-all .icon-restaurant #icon-checkbox-3 {
+  visibility: hidden;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+}
 .icon-restaurant-all .icon-restaurant #icon-checkbox-4 {
   visibility: hidden;
   position: absolute;
@@ -274,15 +289,27 @@
   display: inline-block;
   cursor: pointer;
 }
-.icon-restaurant-all .icon-restaurant #icon-checkbox-1:checked ~ label .icon-restaurant-coeur-vide,
-.icon-restaurant-all .icon-restaurant #icon-checkbox-2:checked ~ label .icon-restaurant-coeur-vide,
-.icon-restaurant-all .icon-restaurant #icon-checkbox-3:checked ~ label .icon-restaurant-coeur-vide,
+.icon-restaurant-all .icon-restaurant #icon-checkbox-1:checked ~ label .icon-restaurant-coeur-vide {
+  opacity: 0;
+}
+.icon-restaurant-all .icon-restaurant #icon-checkbox-1:checked ~ label .icon-restaurant-coeur-plein {
+  opacity: 1;
+}
+.icon-restaurant-all .icon-restaurant #icon-checkbox-2:checked ~ label .icon-restaurant-coeur-vide {
+  opacity: 0;
+}
+.icon-restaurant-all .icon-restaurant #icon-checkbox-2:checked ~ label .icon-restaurant-coeur-plein {
+  opacity: 1;
+}
+.icon-restaurant-all .icon-restaurant #icon-checkbox-3:checked ~ label .icon-restaurant-coeur-vide {
+  opacity: 0;
+}
+.icon-restaurant-all .icon-restaurant #icon-checkbox-3:checked ~ label .icon-restaurant-coeur-plein {
+  opacity: 1;
+}
 .icon-restaurant-all .icon-restaurant #icon-checkbox-4:checked ~ label .icon-restaurant-coeur-vide {
   opacity: 0;
 }
-.icon-restaurant-all .icon-restaurant #icon-checkbox-1:checked ~ label .icon-restaurant-coeur-plein,
-.icon-restaurant-all .icon-restaurant #icon-checkbox-2:checked ~ label .icon-restaurant-coeur-plein,
-.icon-restaurant-all .icon-restaurant #icon-checkbox-3:checked ~ label .icon-restaurant-coeur-plein,
 .icon-restaurant-all .icon-restaurant #icon-checkbox-4:checked ~ label .icon-restaurant-coeur-plein {
   opacity: 1;
 }
