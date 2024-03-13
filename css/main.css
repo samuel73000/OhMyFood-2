@@ -69,9 +69,17 @@
 .container-header .container-localisation .i-header {
   color: #353535;
   font-size: 16px;
+  margin-left: 60px;
 }
 .container-header .container-localisation .p-header {
   margin-left: 17px;
+  background-color: #EAEAEA;
+  border: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+}
+.container-header .container-localisation .p-header::placeholder {
   font-size: 16px;
   font-weight: 500;
   color: #353535;
@@ -263,6 +271,11 @@
     height: 231px;
   }
 }
+@media (min-width: 768px) {
+  .icon-restaurant-all .icon-restaurant .icon-restaurant-img {
+    height: 200px;
+  }
+}
 .icon-restaurant-all .icon-restaurant .icon-restaurant-titre {
   font-size: 18px;
   font-weight: 700;
@@ -359,7 +372,7 @@
 @media (min-width: 1439px) {
   .container-footer {
     position: relative;
-    height: 114px;
+    height: 54px;
   }
 }
 .container-footer .titre-footer {
@@ -375,7 +388,7 @@
     justify-content: end;
     position: absolute;
     right: 2%;
-    bottom: 7%;
+    bottom: 1%;
   }
 }
 
@@ -683,13 +696,13 @@
   color: white;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:checked ~ .container-valide-page-restaurant {
-  animation: apparition-div-valide-page-restaurant 1s ease forwards;
+  animation: apparition-div-valide-page-restaurant 0.5s ease forwards;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:checked ~ .container-valide-page-restaurant .icon-valide-page-restaurant {
   animation: spin-valide-page-restaurant 1s ease forwards;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:not(:checked) ~ .container-valide-page-restaurant {
-  animation: disparition-div-valide-page-restaurant 1s ease forwards;
+  animation: disparition-div-valide-page-restaurant 0.5s ease forwards;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:not(:checked) ~ .container-valide-page-restaurant .icon-valide-page-restaurant {
   animation: disparition-spin-valide-page-restaurant 1s ease forwards;
@@ -735,7 +748,7 @@
   gap: 4px;
   background-color: white;
   color: #9356DC;
-  animation: disappear 20ms 4s;
+  animation: disappear 20ms 3.5s;
   animation-fill-mode: forwards;
 }
 
