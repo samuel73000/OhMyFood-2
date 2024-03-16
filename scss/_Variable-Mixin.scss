@@ -8,8 +8,8 @@ $color-gray: #353535;
     justify-content: center;
     align-items: center;
 }
+// mixin pour le coeur pour toutes les pages 
 @mixin Animation-coeur{
-  /* Définir une couleur de remplissage transparente */
       color: transparent;
       /* Dégradé pour le contour */
       background: linear-gradient(193.33deg, $color-Primaire 0%, $color-Secondaire 100%),
@@ -19,7 +19,7 @@ $color-gray: #353535;
       -webkit-background-clip: text;
       background-clip: text; 
 }
-
+// mixin du bouton de toutes les pages 
 @mixin Bouton-Primaire{
   font-size: 16px;
     color: white;
@@ -36,7 +36,7 @@ $color-gray: #353535;
       }
 }
 
-
+// keyframes pour page restaurant apparition des menus 
 @keyframes apparition-section-restaurant {
   0%{
     scale: 0;
@@ -45,7 +45,7 @@ $color-gray: #353535;
     scale: 1;
   }
 }
-
+// keyframes pour page restaurant valider 
 @keyframes apparition-div-valide-page-restaurant{
  
   0% {
@@ -57,6 +57,7 @@ $color-gray: #353535;
     right: 0; /* Le déplacer à sa position finale */
 }
 }
+// keyframes pour page restaurant spin
 @keyframes spin-valide-page-restaurant{
   0%{
     transform: rotate(360deg);
@@ -65,6 +66,7 @@ $color-gray: #353535;
     transform: rotate(0deg);
   }
 }
+ // keyframes pour page restaurant valider 
 @keyframes disparition-div-valide-page-restaurant{
   0% {
     opacity: 1; 
@@ -75,6 +77,7 @@ $color-gray: #353535;
     right: -50px; 
 }
 }
+// keyframes pour page restaurant spin inverse 
 @keyframes disparition-spin-valide-page-restaurant{
   0%{
     transform: rotate(0deg);
@@ -82,4 +85,9 @@ $color-gray: #353535;
   100%{
     transform: rotate(360deg);
   }
+}
+// mixin pour le  loader
+@mixin letter-animation($delay) {
+  animation: drop 1.5s ease-in-out infinite;
+  animation-delay: $delay;
 }

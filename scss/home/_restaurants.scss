@@ -85,7 +85,7 @@
       transition: opacity 2s; /* Ajoutez une transition pour l'opacité */
       transform-origin: top;
     }
-
+//  boucle for pour styliser les 4 inputs et pas repeter le code 
     @for $i from 1 through 4 {
       $id: unquote("icon-checkbox-#{$i}");
       
@@ -104,7 +104,8 @@
       display: inline-block;
       cursor: pointer;
     }
-    
+    //  Lorsqu'on clique sur le coeur vide il passe en opacity 0 et on identifie sur qu'elle coeur on 
+    // a cliquer grace a l'id de l'input et utilisation de boucle for pour ne pas repeter le code 
     @for $i from 1 through 4 {
       $id: unquote("icon-checkbox-#{$i}");
       ##{$id}:checked ~ label .icon-restaurant-coeur-vide {

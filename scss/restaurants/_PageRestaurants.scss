@@ -94,11 +94,11 @@
       margin-top: -20px;
       cursor: pointer;
     }
-
+//  Lorsqu'on clique sur le coeur vide il passe en opacity 0
     #icon-checkbox-1:checked ~ label .icon-restaurant-coeur-vide {
       opacity: 0;
     }
-
+    // Lorsqu'on clique sur le coeur plein il passe en opacity 1
     #icon-checkbox-1:checked ~ label .icon-restaurant-coeur-plein {
       opacity: 1;
     }
@@ -109,6 +109,7 @@
     padding-left: 17px;
     padding-right: 17px;
     animation: apparition-section-restaurant 1s ease 2.5s forwards;
+ // boucle for pour faire apparaitre les sections de menus 
     @for $i from 1 through 15 {
       &:nth-child(#{$i}) {
         animation-fill-mode: both;
@@ -193,21 +194,21 @@
           color: white;
         }
       }
-      // animation div valide
+      // animation div valide quand on clique elle apparaît
       #icon-valide:checked ~ .container-valide-page-restaurant {
         animation: apparition-div-valide-page-restaurant 0.5s ease forwards;
       }
-      // animation icon valide pour qu'elle spin
+      // animation icon valide pour qu'elle spin quand on clique 
       #icon-valide:checked
         ~ .container-valide-page-restaurant
         .icon-valide-page-restaurant {
         animation: spin-valide-page-restaurant 1s ease forwards;
       }
-
+// animation div valide quand on clique elle disparaît
       #icon-valide:not(:checked) ~ .container-valide-page-restaurant {
         animation: disparition-div-valide-page-restaurant 0.5s ease forwards;
       }
-
+// animation icon valide pour qu'elle spin dans l'autre sens  quand on clique 
       #icon-valide:not(:checked)
         ~ .container-valide-page-restaurant
         .icon-valide-page-restaurant {
