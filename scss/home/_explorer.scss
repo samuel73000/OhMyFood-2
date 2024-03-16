@@ -1,8 +1,6 @@
 .container-explorer {
   flex-direction: column;
-  padding-bottom: 57px;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding: 0 5% 57px 5% ;
   @include center;
 
   .titre-explorer {
@@ -10,7 +8,7 @@
     font-size: 24px;
     font-weight: 700;
     margin-top: 39px;
-    color: black;
+    color: $color-black;
     @media (min-width: 1439px){
       font-size: 40px;
       

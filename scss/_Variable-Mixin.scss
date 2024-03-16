@@ -2,7 +2,8 @@ $color-Primaire: #9356DC;
 $color-Secondaire: #FF79DA;
 $color-Tertiaire: #99E2D0;
 $color-gray: #353535;
-
+$color-white:#FFFFFF;
+$color-black:#000000;
 @mixin center{
     display: flex;
     justify-content: center;
@@ -22,17 +23,17 @@ $color-gray: #353535;
 // mixin du bouton de toutes les pages 
 @mixin Bouton-Primaire{
   font-size: 16px;
-    color: white;
+    color: $color-white;
     font-weight: 500;
     height: 50px;
     border-radius: 25px;
-      box-shadow: 0px 4px 10px 0px #00000040;
+      box-shadow: 0px 4px 10px 0px $color-black;
       background: linear-gradient(193.33deg, $color-Primaire -11.44%, $color-Secondaire 123.93%);
       border: 0px;
       cursor: pointer;
       &:hover{
         filter: brightness(110%);
-      box-shadow: 0px 8px 20px 0px #00000040;
+      box-shadow: 0px 8px 20px 0px $color-black;
       }
 }
 

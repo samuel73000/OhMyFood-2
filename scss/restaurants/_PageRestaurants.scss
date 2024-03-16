@@ -1,7 +1,7 @@
 .fleche-back-restaurant {
   position: absolute;
   left: 5%;
-  color: black;
+  color: $color-black;
 }
 .img-page-restaurant {
   width: 100%;
@@ -126,7 +126,7 @@
     .container-card-page-restaurant {
       position: relative;
       width: 100%;
-      background-color: white;
+      background-color: $color-white;
       box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001a;
       border-radius: 15.04px;
       display: flex;
@@ -191,7 +191,7 @@
         bottom: -1.1px;
         .icon-valide-page-restaurant {
           font-size: 20px;
-          color: white;
+          color: $color-white;
         }
       }
       // animation div valide quand on clique elle apparaît

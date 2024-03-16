@@ -8,7 +8,7 @@
     }
 
     .titre-footer{
-color: white;
+color: $color-white;
 font-family: Shrikhand;
 font-weight: 400;
 font-size: 18px;
@@ -26,7 +26,7 @@ margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     gap: 7px;
-    color: white;
+    color: $color-white;
     font-size: 16px;
     font-weight: 500;
     @media (min-width: 1439px){
@@ -40,7 +40,7 @@ margin-bottom: 16px;
     }
    .footer-a{
     text-decoration: none;
-    color: white;
+    color: $color-white;
     font-size: 16px;
     font-weight: 500;
    }

@@ -1,8 +1,7 @@
 .container-fonctionnement{
 padding: 20px;
     @media (min-width: 1439px){
-        padding-left: 180px;
-        padding-right: 180px;
+        padding: 20px 180px 20px 180px;
     }
 .titre-fonctionnement{
 margin-bottom: 26px;    
@@ -29,7 +28,7 @@ margin-bottom: 26px;
         height: 72px;
         border-radius: 20px;
         box-shadow: 0px 4px 15px 0px #00000026;
-        background-color: #F6F6F6;
+        background-color: $color-white;
     }
     .numero-fonctionnement{
         position: absolute;
@@ -39,7 +38,7 @@ margin-bottom: 26px;
         @include center;
         font-weight: 500;
         font-size: 14px;
-        color: white;
+        color: $color-white;
         background-color: $color-Primaire;
         width: 24px;
         height: 24px;
