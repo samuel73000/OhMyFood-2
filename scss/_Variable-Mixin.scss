@@ -1,89 +1,96 @@
-$color-Primaire: #9356DC;
-$color-Secondaire: #FF79DA;
-$color-Tertiaire: #99E2D0;
+$color-Primaire: #9356dc;
+$color-Secondaire: #ff79da;
+$color-Tertiaire: #99e2d0;
 $color-gray: #353535;
-$color-white:#FFFFFF;
-$color-black:#000000;
-@mixin center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+$color-white: #ffffff;
+$color-black: #000000;
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-// mixin pour le coeur pour toutes les pages 
-@mixin Animation-coeur{
-      color: transparent;
-      /* Dégradé pour le contour */
-      background: linear-gradient(193.33deg, $color-Primaire 0%, $color-Secondaire 100%),
-        /* Dégradé pour le centre */
-          radial-gradient(circle, $color-Primaire 0%, $color-Secondaire 100%);
-      /* Appliquer le dégradé en tant que masque */
-      -webkit-background-clip: text;
-      background-clip: text; 
+// mixin pour le coeur pour toutes les pages
+@mixin Animation-coeur {
+  color: transparent;
+  /* Dégradé pour le contour */
+  background: linear-gradient(
+      193.33deg,
+      $color-Primaire 0%,
+      $color-Secondaire 100%
+    ),
+    /* Dégradé pour le centre */
+      radial-gradient(circle, $color-Primaire 0%, $color-Secondaire 100%);
+  /* Appliquer le dégradé en tant que masque */
+  -webkit-background-clip: text;
+  background-clip: text;
 }
-// mixin du bouton de toutes les pages 
-@mixin Bouton-Primaire{
+// mixin du bouton de toutes les pages
+@mixin Bouton-Primaire {
   font-size: 16px;
-    color: $color-white;
-    font-weight: 500;
-    height: 50px;
-    border-radius: 25px;
-      box-shadow: 0px 4px 10px 0px $color-black;
-      background: linear-gradient(193.33deg, $color-Primaire -11.44%, $color-Secondaire 123.93%);
-      border: 0px;
-      cursor: pointer;
-      &:hover{
-        filter: brightness(110%);
-      box-shadow: 0px 8px 20px 0px $color-black;
-      }
+  color: $color-white;
+  font-weight: 500;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px $color-black;
+  background: linear-gradient(
+    193.33deg,
+    $color-Primaire -11.44%,
+    $color-Secondaire 123.93%
+  );
+  border: 0px;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(110%);
+    box-shadow: 0px 8px 20px 0px $color-black;
+  }
 }
 
-// keyframes pour page restaurant apparition des menus 
+// keyframes pour page restaurant apparition des menus
 @keyframes apparition-section-restaurant {
-  0%{
+  0% {
     scale: 0;
   }
-  100%{
+  100% {
     scale: 1;
   }
 }
-// keyframes pour page restaurant valider 
-@keyframes apparition-div-valide-page-restaurant{
- 
+// keyframes pour page restaurant valider
+@keyframes apparition-div-valide-page-restaurant {
   0% {
     opacity: 0; /* L'élément est complètement transparent */
     right: -50px; /* Déplacer l'élément hors de la vue */
-}
-100% {
+  }
+  100% {
     opacity: 1; /* L'élément devient complètement opaque */
     right: 0; /* Le déplacer à sa position finale */
-}
+  }
 }
 // keyframes pour page restaurant spin
-@keyframes spin-valide-page-restaurant{
-  0%{
+@keyframes spin-valide-page-restaurant {
+  0% {
     transform: rotate(360deg);
   }
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
- // keyframes pour page restaurant valider 
-@keyframes disparition-div-valide-page-restaurant{
+// keyframes pour page restaurant valider
+@keyframes disparition-div-valide-page-restaurant {
   0% {
-    opacity: 1; 
-    right: 0; 
+    opacity: 1;
+    right: 0;
+  }
+  100% {
+    opacity: 0;
+    right: -50px;
+  }
 }
-100% {
-    opacity: 0; 
-    right: -50px; 
-}
-}
-// keyframes pour page restaurant spin inverse 
-@keyframes disparition-spin-valide-page-restaurant{
-  0%{
+// keyframes pour page restaurant spin inverse
+@keyframes disparition-spin-valide-page-restaurant {
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }

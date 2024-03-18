@@ -60,7 +60,7 @@
 }
 .container-header .container-localisation {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -73,7 +73,7 @@
 }
 .container-header .container-localisation .p-header {
   margin-left: 17px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   border: 0;
   font-size: 16px;
   font-weight: 500;
@@ -114,12 +114,12 @@
   margin-top: 26px;
   width: 216px;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 500;
   height: 50px;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px #000000;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   border: 0px;
   cursor: pointer;
 }
@@ -170,7 +170,7 @@
   height: 72px;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .container-fonctionnement .icon-fonctionnement-all .numero-fonctionnement {
   position: absolute;
@@ -182,14 +182,14 @@
   align-items: center;
   font-weight: 500;
   font-size: 14px;
-  color: #FFFFFF;
-  background-color: #9356DC;
+  color: #ffffff;
+  background-color: #9356dc;
   width: 24px;
   height: 24px;
   border-radius: 50%;
 }
 .container-fonctionnement .icon-fonctionnement-all .font-fonctionnement {
-  color: #7E7E7E;
+  color: #7e7e7e;
   font-size: 19px;
 }
 .container-fonctionnement .icon-fonctionnement-all .p-fonctionnement {
@@ -198,7 +198,7 @@
   margin-left: 15px;
 }
 .container-fonctionnement .icon-fonctionnement-all .icon-fonctionnement:hover .font-fonctionnement {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .container-restaurants {
@@ -249,7 +249,7 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 2px;
   font-size: 14px;
@@ -297,7 +297,7 @@
   cursor: pointer;
   color: transparent;
   /* Dégradé pour le contour */
-  background: linear-gradient(193.33deg, #9356DC 0%, #FF79DA 100%), radial-gradient(circle, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(193.33deg, #9356dc 0%, #ff79da 100%), radial-gradient(circle, #9356dc 0%, #ff79da 100%);
   /* Appliquer le dégradé en tant que masque */
   -webkit-background-clip: text;
   background-clip: text;
@@ -372,7 +372,7 @@
   }
 }
 .container-footer .titre-footer {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Shrikhand;
   font-weight: 400;
   font-size: 18px;
@@ -392,7 +392,7 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
 }
@@ -408,7 +408,7 @@
 }
 .container-footer-p .footer-a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
 }
@@ -521,7 +521,7 @@
   cursor: pointer;
   color: transparent;
   /* Dégradé pour le contour */
-  background: linear-gradient(193.33deg, #9356DC 0%, #FF79DA 100%), radial-gradient(circle, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(193.33deg, #9356dc 0%, #ff79da 100%), radial-gradient(circle, #9356dc 0%, #ff79da 100%);
   /* Appliquer le dégradé en tant que masque */
   -webkit-background-clip: text;
   background-clip: text;
@@ -612,13 +612,13 @@
   font-size: 16px;
   font-weight: 300;
   padding-bottom: 5px;
-  border-bottom: solid 3px #99E2D0;
+  border-bottom: solid 3px #99e2d0;
   width: 40px;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant {
   position: relative;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 15.04px;
   display: flex;
@@ -678,7 +678,7 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   padding: 20px;
   border-radius: 0 15px 15px 0;
   height: auto;
@@ -688,7 +688,7 @@
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant .container-valide-page-restaurant .icon-valide-page-restaurant {
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:checked ~ .container-valide-page-restaurant {
   animation: apparition-div-valide-page-restaurant 0.5s ease forwards;
@@ -711,12 +711,12 @@
 .container-page-restaurant .container-bouton-page-restaurant .bouton-page-restaurant {
   width: 186px;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 500;
   height: 50px;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px #000000;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   border: 0px;
   cursor: pointer;
 }
@@ -740,8 +740,8 @@
   font-weight: 400;
   font-size: 2.5em;
   gap: 4px;
-  background-color: #FFFFFF;
-  color: #9356DC;
+  background-color: #ffffff;
+  color: #9356dc;
   animation: disappear 20ms 3.5s;
   animation-fill-mode: forwards;
 }

@@ -1,6 +1,6 @@
 .container-explorer {
   flex-direction: column;
-  padding: 0 5% 57px 5% ;
+  padding: 0 5% 57px 5%;
   @include center;
 
   .titre-explorer {
@@ -9,9 +9,8 @@
     font-weight: 700;
     margin-top: 39px;
     color: $color-black;
-    @media (min-width: 1439px){
+    @media (min-width: 1439px) {
       font-size: 40px;
-      
     }
   }
   .p-explorer {
@@ -25,5 +24,4 @@
     width: 216px;
     @include Bouton-Primaire;
   }
-  
 }
