@@ -9,12 +9,27 @@
 }
 @keyframes apparition-div-valide-page-restaurant {
   0% {
-    opacity: 0; /* L'élément est complètement transparent */
-    right: -50px; /* Déplacer l'élément hors de la vue */
+    opacity: 0;
+    transform: scaleX(0.1); /* Commence à moitié de la taille */
+    transform-origin: right;
   }
   100% {
-    opacity: 1; /* L'élément devient complètement opaque */
-    right: 0; /* Le déplacer à sa position finale */
+    opacity: 1;
+    transform: scaleX(1); /* Retour à la taille normale */
+    transform-origin: right;
+  }
+}
+/* Animation pour la disparition de l'élément */
+@keyframes disparition-div-valide-page-restaurant {
+  0% {
+    opacity: 1;
+    transform: scaleX(1); /* Taille normale */
+    transform-origin: right;
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0.1); /* Réduit à la moitié de la taille */
+    transform-origin: right;
   }
 }
 @keyframes spin-valide-page-restaurant {
@@ -23,16 +38,6 @@
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes disparition-div-valide-page-restaurant {
-  0% {
-    opacity: 1;
-    right: 0;
-  }
-  100% {
-    opacity: 0;
-    right: -50px;
   }
 }
 @keyframes disparition-spin-valide-page-restaurant {
@@ -620,7 +625,7 @@
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
-  border-radius: 15.04px;
+  border-radius: 15px;
   display: flex;
   padding: 10px 0px 10px 0px;
   gap: 5px;
@@ -682,9 +687,8 @@
   padding: 20px;
   border-radius: 0 15px 15px 0;
   height: auto;
-  opacity: 0;
   right: 0;
-  bottom: -1.1px;
+  bottom: -1px;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant .container-valide-page-restaurant .icon-valide-page-restaurant {
   font-size: 20px;
