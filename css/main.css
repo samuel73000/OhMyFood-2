@@ -48,6 +48,22 @@
     transform: rotate(360deg);
   }
 }
+@keyframes prixDecale {
+  0% {
+    right: 13.5px;
+  }
+  100% {
+    right: 65px;
+  }
+}
+@keyframes prixDecale-reverse {
+  0% {
+    right: 70px;
+  }
+  100% {
+    right: 13.5px;
+  }
+}
 .container-header {
   width: 100%;
 }
@@ -668,7 +684,9 @@
   font-size: 15px;
   font-weight: 700;
   width: 100%;
-  margin-right: 13.5px;
+  right: 13.5px;
+  bottom: 13.5px;
+  position: absolute;
 }
 @media (min-width: 1439px) {
   .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant .prix-card-page-restaurant {
@@ -679,6 +697,12 @@
   .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant .prix-card-page-restaurant {
     margin-left: -40%;
   }
+}
+.container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:checked ~ .prix-card-page-restaurant {
+  animation: prixDecale 0.5s ease-in-out forwards;
+}
+.container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:not(:checked) ~ .prix-card-page-restaurant {
+  animation: prixDecale-reverse 0.5s ease-in-out forwards;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant .container-valide-page-restaurant {
   position: absolute;
@@ -696,16 +720,16 @@
   color: #ffffff;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:checked ~ .container-valide-page-restaurant {
-  animation: apparition-div-valide-page-restaurant 0.5s ease forwards;
+  animation: apparition-div-valide-page-restaurant 0.5s ease-in-out forwards;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:checked ~ .container-valide-page-restaurant .icon-valide-page-restaurant {
-  animation: spin-valide-page-restaurant 1s ease forwards;
+  animation: spin-valide-page-restaurant 1s ease-in-out forwards;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:not(:checked) ~ .container-valide-page-restaurant {
-  animation: disparition-div-valide-page-restaurant 0.5s ease forwards;
+  animation: disparition-div-valide-page-restaurant 0.5s ease-in-out forwards;
 }
 .container-page-restaurant .container-card-page-restaurant-all .container-card-page-restaurant #icon-valide:not(:checked) ~ .container-valide-page-restaurant .icon-valide-page-restaurant {
-  animation: disparition-spin-valide-page-restaurant 1s ease forwards;
+  animation: disparition-spin-valide-page-restaurant 1s ease-in-out forwards;
 }
 .container-page-restaurant .container-bouton-page-restaurant {
   display: flex;

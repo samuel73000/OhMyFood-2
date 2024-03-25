@@ -105,3 +105,19 @@ $color-black: #000000;
   animation: drop 1.5s ease-in-out infinite;
   animation-delay: $delay;
 }
+@keyframes prixDecale{
+  0%{
+right: 13.5px;
+  }
+  100%{
+right: 65px;
+  }
+}
+@keyframes prixDecale-reverse{
+  0%{
+right: 70px;
+  }
+  100%{
+right: 13.5px;
+  }
+}

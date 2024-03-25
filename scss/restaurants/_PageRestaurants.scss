@@ -171,13 +171,22 @@
         font-size: 15px;
         font-weight: 700;
         width: 100%;
-        margin-right: 13.5px;
+        right: 13.5px;
+        bottom: 13.5px;
+        position: absolute;
         @media (min-width: 1439px) {
           margin-left: -40%;
         }
         @media (min-width: 768px) {
           margin-left: -40%;
         }
+      }
+      // prix qui ce decale a gauche quand on valide 
+      #icon-valide:checked ~ .prix-card-page-restaurant {
+        animation: prixDecale 0.5s ease-in-out forwards;
+      }
+      #icon-valide:not(:checked) ~ .prix-card-page-restaurant {
+        animation: prixDecale-reverse 0.5s ease-in-out forwards;
       }
       .container-valide-page-restaurant {
         position: absolute;
@@ -196,24 +205,24 @@
         }
       }
       // animation div valide quand on clique elle apparaît
-      #icon-valide:checked ~ .container-valide-page-restaurant {
-        animation: apparition-div-valide-page-restaurant 0.5s ease forwards;
+      #icon-valide:checked ~ .container-valide-page-restaurant  {
+        animation: apparition-div-valide-page-restaurant 0.5s ease-in-out forwards;
       }
       // animation icon valide pour qu'elle spin quand on clique
       #icon-valide:checked
         ~ .container-valide-page-restaurant
         .icon-valide-page-restaurant {
-        animation: spin-valide-page-restaurant 1s ease forwards;
+        animation: spin-valide-page-restaurant 1s ease-in-out forwards;
       }
       // animation div valide quand on clique elle disparaît
       #icon-valide:not(:checked) ~ .container-valide-page-restaurant {
-        animation: disparition-div-valide-page-restaurant 0.5s ease forwards;
+        animation: disparition-div-valide-page-restaurant 0.5s ease-in-out forwards;
       }
       // animation icon valide pour qu'elle spin dans l'autre sens  quand on clique
       #icon-valide:not(:checked)
         ~ .container-valide-page-restaurant
         .icon-valide-page-restaurant {
-        animation: disparition-spin-valide-page-restaurant 1s ease forwards;
+        animation: disparition-spin-valide-page-restaurant 1s ease-in-out forwards;
       }
     }
   }

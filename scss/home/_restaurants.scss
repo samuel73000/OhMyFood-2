@@ -80,7 +80,7 @@
       font-size: 22px;
       font-style: normal;
       cursor: pointer;
-      @include Animation-coeur; // Assurez-vous que cette mixin est définie ailleurs dans votre code
+      @include Animation-coeur; 
       opacity: 0; /* Commencez avec une opacité de 0 */
       transition: opacity 2s; /* Ajoutez une transition pour l'opacité */
       transform-origin: top;
