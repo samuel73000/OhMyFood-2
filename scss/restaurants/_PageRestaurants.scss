@@ -181,7 +181,7 @@
           margin-left: -40%;
         }
       }
-      // prix qui ce decale a gauche quand on valide 
+      // prix qui se decale a gauche quand on valide 
       #icon-valide:checked ~ .prix-card-page-restaurant {
         animation: prixDecale 0.5s ease-in-out forwards;
       }
